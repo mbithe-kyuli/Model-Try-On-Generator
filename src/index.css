@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 10% 98%;
+    --foreground: 237 64% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 237 64% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 237 64% 15%;
+
+    --primary: 237 64% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 74% 66%;
+    --secondary-foreground: 237 64% 15%;
+
+    --muted: 237 20% 96%;
+    --muted-foreground: 237 20% 45%;
+
+    --accent: 43 74% 66%;
+    --accent-foreground: 237 64% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 237 20% 90%;
+    --input: 237 20% 90%;
+    --ring: 237 64% 22%;
+
+    --radius: 0.75rem;
+    
+    /* Custom tokens for fashion app */
+    --gradient-hero: linear-gradient(135deg, hsl(237 64% 22%) 0%, hsl(237 50% 35%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(240 10% 98%) 100%);
+    --shadow-elegant: 0 10px 40px -10px hsl(237 64% 22% / 0.15);
+    --shadow-lift: 0 20px 60px -15px hsl(237 64% 22% / 0.25);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 237 64% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 237 50% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 237 50% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 43 74% 66%;
+    --primary-foreground: 237 64% 15%;
+
+    --secondary: 237 40% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 237 40% 18%;
+    --muted-foreground: 237 20% 65%;
+
+    --accent: 43 74% 66%;
+    --accent-foreground: 237 64% 15%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 237 40% 18%;
+    --input: 237 40% 18%;
+    --ring: 43 74% 66%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
